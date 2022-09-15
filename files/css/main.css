@@ -1,0 +1,10 @@
+body, h4, p, ul, h6, h5{
+  margin: 0;
+
+  }
+.mid_volume{
+  display: flex;
+}
+body, button{
+  font-family: 'Oswald', sans-serif;
+}

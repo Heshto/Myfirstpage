@@ -1,0 +1,111 @@
+aside {
+  float: left;
+  width: 200px;
+  background-color: #19202e;
+  display: flex;
+  flex-direction: column;
+  margin-right: 0;
+
+}
+/*Стили подложек*/
+.substrance_first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f2637;
+  width: 200px;
+  margin:  0 0 5px 0;
+}
+.substrance {
+  border-style: solid;
+  border-width: 0;
+  border-top-width: 1px;
+  border-color: #282f41;
+  background-color: #1f2637;
+  width: 100%;
+  margin: 5px 0;
+  padding-bottom: 15px;
+}
+/*Стиль кнопки добавления*/
+.add_book_button{
+  padding: 0;
+  margin: 35px 0;
+  border-radius: 4px;
+  border: 0;
+  background-color: #f2795a;
+  width: 160px;
+  height: 44px;
+  color: white;
+  font-size: 15px;
+  }
+/*Стиль иконок в браузере навигации и History List*/
+.aside_icons{
+    height: 16px;
+    width: 16px;
+    padding-right: 10px;
+    margin-left: 20px;
+}
+/*Стиль меню навигации и History List*/
+.browser, .history_list {
+  list-style-type: none;
+  padding: 0;
+  background-color: #1f2637;
+}
+.history_list p,.history_list img{
+    margin-top: 20px;
+}
+.history_list p{
+  margin-right: 20px;
+}
+/*Стиль текста в меню навигации и History List*/
+.browser_li, .last_perfomance, .last_perfomance_time, .prelast_perfomance, .prelast_perfomance_time{
+  display: flex;
+  width: 100%;
+  margin: 0 0 0 0;
+  font-size: 12px;
+  color: #78829d;
+  border: 0;
+
+}
+.browser_li{
+  align-items: center;
+  background-color: #1f2637;
+  height: 40px ;
+
+}
+.browser_li:hover{
+  background-color: #15a4fa;
+  border-color: #15a4fa;
+  color: white;
+}
+
+/*Стиль меню категорий*/
+.categories_li_red,.categories_li_yellow,.categories_li_blue,.categories_li_purple {
+  margin: 15px 0 0 0;
+}
+/*Цвет точек перед категорией*/
+.categories_li_red{
+  color: #e64c66;
+}
+.categories_li_yellow{
+  color: #ffab00;
+}
+.categories_li_blue{
+  color: #02b4d1;
+}
+.categories_li_purple{
+  color: #7874cf;
+}
+.categories{
+  margin: 0;
+}
+/*Стиль текста в категориях*/
+.categories_text{
+  color: #78829d;
+  font-size: 13px;
+}
+/*Стиль жирного текста текста в History List*/
+.lighter {
+  color: #9eb2c9;
+  font-size: 12px;
+}
