@@ -2,7 +2,6 @@ main {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  width: 100%;
 }
 .content {
   overflow-y: scroll;
@@ -14,6 +13,7 @@ main {
   grid-row-gap: 30px;
   grid-column-end: 3;
   margin: 30px 20px;
+  height: 100%;
 }
 .content::-webkit-scrollbar{
   width: 5px;

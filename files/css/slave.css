@@ -30,21 +30,23 @@
 form {
   text-overflow: ellipsis;
   overflow: hidden;
-
   display: flex;
   align-items: center;
-
-
+  border: 0;
+  white-space: nowrap;
+  border-radius: 25px;
+  width: 400px;
   background-color: #ffffff;
   color: grey;
+  padding-left: 15px;
 }
 form img {
   height: 70%;
   margin-right: 5px;
 }
 .poisk{
-  flex-grow: 1;
-  margin-left: 15px;
+  outline: none;
+  /* flex-grow: 1; */
   border: 0;
   white-space: nowrap;
   border-radius: 25px;
