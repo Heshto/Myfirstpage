@@ -30,19 +30,23 @@
 form {
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
+
   display: flex;
   align-items: center;
-  border-radius: 25px;
-  width: 400px;
+
+
   background-color: #ffffff;
   color: grey;
-}
-form p {
-  flex-grow: 1;
-  margin-left: 15px;
 }
 form img {
   height: 70%;
   margin-right: 5px;
+}
+.poisk{
+  flex-grow: 1;
+  margin-left: 15px;
+  border: 0;
+  white-space: nowrap;
+  border-radius: 25px;
+  width: 400px;
 }
