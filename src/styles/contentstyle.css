@@ -1,0 +1,49 @@
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.content {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 780px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr)) repeat(auto-fit, minmax(200px, 1fr));
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+  grid-column-end: 3;
+  margin: 30px 20px;
+  height: 100%;
+}
+.content::-webkit-scrollbar{
+  width: 5px;
+}
+.content::-webkit-scrollbar-button{
+
+}
+.content::-webkit-scrollbar-track{
+  width: 0;
+  height: 0;
+}
+.content::-webkit-scrollbar-thumb{
+  background-color: #ccd5e4;
+  border-radius: 10px;
+}
+.content section {
+  display: flex;
+  flex-direction: column;
+}
+.stars {
+  height:15px;
+  width: 71px;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+section img {
+  width: 200px;
+  height: 275px;
+  margin-bottom: 15px;
+}
+section h6 {
+  margin-top:7px;
+}

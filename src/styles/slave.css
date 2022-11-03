@@ -1,0 +1,54 @@
+.slave {
+  height: 120px;
+  width: auto;
+  background-color: #eef1f7;
+}
+.slave h1 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: 30px;
+}
+.filters_and_search {
+  display: flex;
+}
+.filters {
+  padding-left: 20px;
+  flex-grow: 1;
+}
+
+.filters button {
+  background-color: #eef1f7;
+  color: #8c97b2;
+  border: 0;
+  border-radius: 15px;
+}
+.filters button:hover {
+  background-color: #97b3ce;
+  color: white;
+}
+form {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  border: 0;
+  white-space: nowrap;
+  border-radius: 25px;
+  width: 400px;
+  background-color: #ffffff;
+  color: grey;
+  padding-left: 15px;
+}
+form img {
+  height: 70%;
+  margin-right: 5px;
+}
+.poisk{
+  outline: none;
+  /* flex-grow: 1; */
+  border: 0;
+  white-space: nowrap;
+  border-radius: 25px;
+  width: 400px;
+}

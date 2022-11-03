@@ -1,0 +1,87 @@
+header {
+  display: flex;
+ border: 0;
+ width: 100%;
+ height: 45px;
+ background: linear-gradient(to right, #383d4b, #2f364a);; /* Цвет фона линейным градиентом */
+ align-items: center;
+}
+.hat_icons {
+  height: 16px;
+  width: 16px;
+  padding-right: 10px;
+}
+.hat_dot {
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  background-color: rgba(25, 32, 46, 0.749);
+}
+.hat {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #78829d;
+  padding-left: 20px;
+/* Текст этого заголовка смещается всегда в центр свободной области см. ниже*/
+}
+.hat_menu{
+  font-size: 13px;
+  color: #78829d;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/* Здесь настройка позиционирования кнопки*/
+.user_menu {
+  position: relative;
+  width: 150px;
+  height: 100%;
+  }
+
+.user_option { /* Стиль кнопки списка */
+  border: 0;
+  background-color: #15a4fa;
+  color: white;
+  font-size: 14px;
+  white-space: nowrap;
+  height: 100%;
+  justify-content: center;
+}
+/* Стиль ячеек выпадающего списка */
+.option_list {
+    display: none;
+    background-color: #4CAF50;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+/* стиль текста в списке */
+.option_list li {
+    color: black;
+    padding: 12px 0 12px 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+/* смена курсора при наведении на кнопку */
+.hat_menu, .user_menu, .hat{
+  cursor: pointer;
+}
+/* Смена цвета фона при наведении на ссылку в списке */
+.user_menu li:hover/*это и есть псевдокласс отвечающий за наведение*/ {
+  background-color: blue;
+}
+
+/* Увеличение кнопки на случай присобачивания имени пользователя */
+.user_menu:hover {
+  width: auto;
+  max-width: 70%;
+}
+/* Показать выпадабщий список при наведении */
+.user_menu:hover .option_list {
+  display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+/* Смена цвета кнопки при наведении */
+.user_menu:hover .user_option {background-color: black;}
