@@ -1,0 +1,13 @@
+body, h4, p, ul, h6, h5{
+  margin: 0;
+
+  }
+.mid_volume{
+  display: flex;
+  flex-grow: 1;
+}
+body, button{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Oswald', sans-serif;
+}
