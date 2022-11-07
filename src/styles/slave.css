@@ -4,9 +4,6 @@
   background-color: #eef1f7;
 }
 .slave h1 {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
   margin-left: 30px;
 }
 .filters_and_search {
@@ -15,6 +12,7 @@
 .filters {
   padding-left: 20px;
   flex-grow: 1;
+  height: 20px;
 }
 
 .filters button {
@@ -27,28 +25,25 @@
   background-color: #97b3ce;
   color: white;
 }
-form {
+.poisk {
   text-overflow: ellipsis;
   overflow: hidden;
   display: flex;
   align-items: center;
-  border: 0;
-  white-space: nowrap;
   border-radius: 25px;
-  width: 400px;
+  min-width: 50%;
   background-color: #ffffff;
   color: grey;
   padding-left: 15px;
 }
-form img {
+.poisk img {
   height: 70%;
   margin-right: 5px;
 }
-.poisk{
+.search{
   outline: none;
-  /* flex-grow: 1; */
+  flex-grow: 1;
   border: 0;
   white-space: nowrap;
   border-radius: 25px;
-  width: 400px;
 }

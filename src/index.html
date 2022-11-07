@@ -9,8 +9,9 @@
 <link rel="stylesheet" href="styles/headstyle.css">
 <link rel="stylesheet" href="styles/asidestyle.css">
 <link rel="stylesheet" href="styles/slave.css">
-<link rel="stylesheet" href="styles/footerstyle.css">
 <link rel="stylesheet" href="styles/contentstyle.css">
+<link rel="stylesheet" href="styles/rating.css">
+<link rel="stylesheet" href="styles/footerstyle.css">
 <link rel="shortcut.icon" href="favicon.ico" type="image/x-icon">
 <title>BookShare</title>
 </head>
@@ -32,35 +33,38 @@
     </header>
     <div class="mid_volume"><!--Центральная часть страницы-->
       <aside><!-- Левая менюшка -->
-        <div class="substrance_first"><!-- Первый раздел с кнопкой добавления -->
-          <button class="add_book_button"><big>+</big> ADD A BOOK</button>
+        <div class="substrance_for_add_button"><!-- Первый раздел с кнопкой добавления -->
+          <button class="add_book_button">
+            <div class="plus_ico"></div>
+            <span>ADD A BOOK</span>
+          </button>
         </div>
         <div class="substrance"><!-- Второй раздел с меню навигации-->
            <ul class="browser">
-            <button class="browser_li">
+            <li class="browser_li">
               <img class="aside_icons" src="assets/icons/nowreading.png"></img>
               Now Reading
-            </button>
-            <button class="browser_li">
+            </li>
+            <li class="browser_li">
               <img class="aside_icons" src="assets/icons/browse.png"></img>
               Browse
-            </button>
-            <button class="browser_li">
+            </li>
+            <li class="browser_li">
               <img class="aside_icons" src="assets/icons/buybooks.png"></img>
               Buy Books
-            </button>
-            <button class="browser_li">
+            </li>
+            <li class="browser_li">
               <img class="aside_icons" src="assets/icons/favouritebooks.png"></img>
               Favourite Books
-            </button>
-            <button class="browser_li">
+            </li>
+            <li class="browser_li">
               <img class="aside_icons" src="assets/icons/wishlist.png"></img>
               Wishlist
-            </button>
-            <button class="browser_li">
+            </li>
+            <li class="browser_li">
               <img class="aside_icons" src="assets/icons/history.png"></img>
               History
-            </button>
+            </li>
             </ul>
         </div>
         <div class="substrance">
@@ -75,13 +79,24 @@
          <ul class="history_list">
           <li class="last_perfomance">
             <img class="aside_icons" src="assets/icons/history.png"></img>
-            <p>You added <span class="lighter">Fight Club</span> by <span class="lighter">Chuck Palahniuk</span> to your <span class="lighter">Must Read Titles</span>
+            <p>
+            You added
+            <span class="lighter">Fight Club</span>
+            by
+            <span class="lighter">Chuck Palahniuk</span>
+            to your
+            <span class="lighter">Must Read Titles</span>
             <br>24 minutes ago
             </p>
           </li>
           <li class="prelast_perfomance">
             <img class="aside_icons" src="assets/icons/history.png"></img>
-            <p>You added <span class="lighter">The Trial</span> by <span class="lighter">Franz Kafka</span> to your <span class="lighter">Must Read Titles</span>
+            <p>You added
+              <span class="lighter">The Trial</span>
+              by
+              <span class="lighter">Franz Kafka</span>
+              to your
+              <span class="lighter">Must Read Titles</span>
               <br>48 minutes ago
             </p>
           </li>
@@ -92,86 +107,108 @@
           <div class="slave">
             <h1>Browse Available Books</h1>
             <div class="filters_and_search">
-              <ul class="filters">
+              <div class="filters">
                 <button class="choosen_button">All Books</button>
                 <button>Most resent</button>
                 <button>Most popular</button>
                 <button>Free Books</button>
-              </ul>
+              </div>
                <!-- Здесь форма для ввода поикового запроса среди книг -->
-              <form action="https://www.google.com/webhp?hl=ru&sa=X&ved=0ahUKEwiCtN2GlfT6AhV9W_EDHQ66DEIQPAgI" id="search_box">
-                <input class="poisk" type="search" size="25" placeholder="Enter keywords">
+              <div class="poisk">
+                <input class="search" type="search" size="25" placeholder="Enter keywords">
                 <img src="assets/icons/search.png"></img>
                 </input>
-              </form>
+              </div>
             </div>
           </div>
           <div class="content">
             <section>
               <img src="assets/books/1.png"></img>
-              <h5>Jewels of Nizam</h5>
-              <h6>by Geeta Devi</h6>
-              <img class="stars" src="assets/books/stars1.png" alt="звездочки">
+              <h2>Jewels of Nizam</h2>
+              <h3>by Geeta Devi</h3>
+                <div class="rating_body">
+                  <div class="rating_active five_★"></div>
+                </div>
             </section>
             <section>
               <img src="assets/books/2.png"></img>
-              <h5>Cake & bakes</h5>
-              <h6>by Sanjeev Kapoor</h6>
-              <img class="stars" src="assets/books/stars1.png" alt="звездочки">
+              <h2>Cake & bakes</h2>
+              <h3>by Sanjeev Kapoor</h3>
+              <div class="rating_body">
+                <div class="rating_active five_★"></div>
+              </div>
             </section>
             <section>
               <img src="assets/books/3.png"></img>
-              <h5>Jamie's kitchen</h5>
-              <h6>by Jamie Oliver</h6>
-              <img class="stars" src="assets/books/stars2.png" alt="звездочки">
+              <h2>Jamie's kitchen</h2>
+              <h3>by Jamie Oliver</h3>
+              <div class="rating_body">
+                <div class="rating_active four_and_half_★"></div>
+              </div>
             </section>
             <section>
               <img src="assets/books/4.png"></img>
-              <h5>Inexpensive Family Meals</h5>
-              <h6>by Silmon Holst</h6>
-              <img class="stars" src="assets/books/stars3.png" alt="звездочки">
+              <h2>Inexpensive Family Meals</h2>
+              <h3>by Silmon Holst</h3>
+              <div class="rating_body">
+                <div class="rating_active four_★"></div>
+              </div>
             </section>
             <section>
               <img src="assets/books/5.png"></img>
-              <h5>Paleo Slow Coocing</h5>
-              <h6>by Chrissy Gower</h6>
-              <img class="stars" src="assets/books/stars2.png" alt="звездочки">
+              <h2>Paleo Slow Coocing</h2>
+              <h3>by Chrissy Gower</h3>
+              <div class="rating_body">
+                <div class="rating_active four_and_half_★"></div>
+              </div>
             </section>
             <section>
               <img src="assets/books/5.png"></img>
-              <h5>Paleo Slow Coocing</h5>
-              <h6>by Chrissy Gower</h6>
-              <img class="stars" src="assets/books/stars2.png" alt="звездочки">
+              <h2>Paleo Slow Coocing</h2>
+              <h3>by Chrissy Gower</h3>
+              <div class="rating_body">
+                <div class="rating_active four_and_half_★"></div>
+              </div>
             </section>
             <section>
               <img src="assets/books/6.png"></img>
-              <h5>Cook Like an Italian</h5>
-              <h6>by Tobie Puttock</h6>
-              <img class="stars" src="assets/books/stars3.png" alt="звездочки">
+              <h2>Cook Like an Italian</h2>
+              <h3>by Tobie Puttock</h3>
+              <div class="rating_body">
+                <div class="rating_active four_★"></div>
+              </div>
             </section>
             <section>
               <img src="assets/books/7.png"></img>
-              <h5>Suneeta Vaswani</h5>
-              <h6>by Geeta Devi</h6>
-              <img class="stars" src="assets/books/stars1.png" alt="звездочки">
+              <h2>Suneeta Vaswani</h2>
+              <h3>by Geeta Devi</h3>
+              <div class="rating_body">
+                <div class="rating_active five_★"></div>
+              </div>
             </section>
             <section>
               <img src="assets/books/8.png"></img>
-              <h5>Jamie Does</h5>
-              <h6>by Jamie Oliver</h6>
-              <img class="stars" src="assets/books/stars3.png" alt="звездочки">
+              <h2>Jamie Does</h2>
+              <h3>by Jamie Oliver</h3>
+              <div class="rating_body">
+                <div class="rating_active four_★"></div>
+              </div>
             </section>
             <section>
               <img src="assets/books/9.png"></img>
-              <h5>Jamie's Italy</h5>
-              <h6>by Jamie Oliver</h6>
-              <img class="stars" src="assets/books/stars1.png" alt="звездочки">
+              <h2>Jamie's Italy</h2>
+              <h3>by Jamie Oliver</h3>
+              <div class="rating_body">
+                <div class="rating_active five_★"></div>
+              </div>
             </section>
             <section>
               <img src="assets/books/10.png"></img>
-              <h5>Vegetables Cookbook</h5>
-              <h6>by Metthew Biggs</h6>
-              <img class="stars" src="assets/books/stars4.png" alt="звездочки">
+              <h2>Vegetables Cookbook</h2>
+              <h3>by Metthew Biggs</h3>
+              <div class="rating_body">
+                <div class="rating_active three_and_half★"></div>
+              </div>
             </section>
           </div>
         </main>
@@ -182,5 +219,23 @@
       <button class="ask">
         <img class="footer_img" src="assets/icons/ask.png"></img></button>
     </footer>
+    <!-- Ведуться технические работы, просьба не обращать внимания!!!
+
+      <div class="rating_value">2</div>
+    </div>
+    <div class="rating" id="sync22">
+      <div class="rating_body" id="sync2">
+        <div class="rating_active"></div>
+        <div class="rating_items">
+          <input type="radio" class="rating_item" name="rating" value="1">
+          <input type="radio" class="rating_item" name="rating" value="2">
+          <input type="radio" class="rating_item" name="rating" value="3">
+          <input type="radio" class="rating_item" name="rating" value="4">
+          <input type="radio" class="rating_item" name="rating" value="5">
+        </div>
+      </div>
+      <div class="rating_value">2</div>
+    </div>
+    <script src="scripts/rating.js" charset="utf-8"></script> -->
   </body>
 </html>

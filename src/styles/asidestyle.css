@@ -1,13 +1,5 @@
-aside {
-  float: left;
-  width: 200px;
-  background-color: #19202e;
-  display: flex;
-  flex-direction: column;
-  margin-right: 0;
-}
 /*Стили подложек*/
-.substrance_first {
+.substrance_for_add_button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,7 +28,28 @@ aside {
   height: 44px;
   color: white;
   font-size: 15px;
+  display: flex;
+  align-items: center;
+  padding-left: 22px;
   }
+.plus_ico {
+  background: white;
+  height: 16px;
+  width: 4px;
+  position: relative;
+  border-radius: 2px;
+  margin-right: 22px;
+}
+.plus_ico:after {
+  content: "";
+  height: 4px;
+  width: 16px;
+  background: white;
+  position: absolute;
+  left: -6px;
+  top: 6px;
+  border-radius: 2px;
+}
 /*Стиль иконок в браузере навигации и History List*/
 .aside_icons{
     height: 16px;
@@ -72,12 +85,16 @@ aside {
   height: 40px ;
 
 }
+/* Смена цвета на синий при наведении мыши */
 .browser_li:hover{
   background-color: #15a4fa;
   border-color: #15a4fa;
   color: white;
 }
-
+/* Изменение цвета картинки при наведении на кнопку */
+.browser_li:hover img{
+  filter: brightness(200%);
+}
 /*Стиль меню категорий*/
 .categories_li_red,.categories_li_yellow,.categories_li_blue,.categories_li_purple {
   margin: 15px 0 0 0;

@@ -1,11 +1,3 @@
-header {
-  display: flex;
- border: 0;
- width: 100%;
- height: 45px;
- background: linear-gradient(to right, #383d4b, #2f364a);; /* Цвет фона линейным градиентом */
- align-items: center;
-}
 .hat_icons {
   height: 16px;
   width: 16px;
@@ -36,7 +28,6 @@ header {
 /* Здесь настройка позиционирования кнопки*/
 .user_menu {
   position: relative;
-  width: 150px;
   height: 100%;
   }
 
