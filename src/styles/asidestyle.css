@@ -5,123 +5,161 @@
   align-items: center;
   background-color: #1f2637;
   width: 200px;
-  margin:  0 0 5px 0;
+  margin: 0 0 5px 0;
 }
+
 .substrance {
-  border-style: solid;
-  border-width: 0;
-  border-top-width: 1px;
-  border-color: #282f41;
-  background-color: #1f2637;
-  width: 100%;
   margin: 5px 0;
-  padding-bottom: 15px;
+  padding: 15px 0;
+  border: 1px solid #282f41;
+  border-left: none;
+  border-right: none;
+  background-color: #1f2637;
 }
-/*Стиль кнопки добавления*/
-.add_book_button{
+
+.substrance:first-child {
+  margin-top: 0;
   padding: 0;
-  margin: 35px 0;
-  border-radius: 4px;
-  border: 0;
-  background-color: #f2795a;
+}
+
+.add_book {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Стиль кнопки добавления*/
+.add_book_button {
   width: 160px;
   height: 44px;
+  margin: 35px 0;
+  border-radius: 4px;
+  background-color: #f2795a;
   color: white;
   font-size: 15px;
   display: flex;
   align-items: center;
-  padding-left: 22px;
-  }
+  justify-content: center;
+}
+
 .plus_ico {
-  background: white;
   height: 16px;
-  width: 4px;
+  width: 16px;
   position: relative;
-  border-radius: 2px;
   margin-right: 22px;
 }
+
 .plus_ico:after {
   content: "";
   height: 4px;
   width: 16px;
   background: white;
   position: absolute;
-  left: -6px;
+  left: 0;
   top: 6px;
   border-radius: 2px;
 }
+
+.plus_ico:before {
+  content: "";
+  height: 16px;
+  width: 4px;
+  background: white;
+  position: absolute;
+  left: 6px;
+  top: 0;
+  border-radius: 2px;
+}
+
 /*Стиль иконок в браузере навигации и History List*/
-.aside_icons{
-    height: 16px;
-    width: 16px;
-    padding-right: 10px;
-    margin-left: 20px;
+.aside_icons {
+  margin-right: 12px;
+  height: 16px;
+  width: 16px;
+  flex-shrink: 0;
+  background-color: gray;
 }
-/*Стиль меню навигации и History List*/
-.browser, .history_list {
-  list-style-type: none;
-  padding: 0;
-  background-color: #1f2637;
+
+.history_list p, .history_list img {
+  margin-top: 20px;
 }
-.history_list p,.history_list img{
-    margin-top: 20px;
-}
-.history_list p{
+
+.history_list p {
   margin-right: 20px;
 }
-/*Стиль текста в меню навигации и History List*/
-.browser_li, .last_perfomance, .last_perfomance_time, .prelast_perfomance, .prelast_perfomance_time{
-  display: flex;
-  width: 100%;
-  margin: 0 0 0 0;
-  font-size: 12px;
-  color: #78829d;
-  border: 0;
 
+.browser_li {
+  height: 40px;
+  padding-left: 20px;
+  cursor: pointer;
 }
-.browser_li{
-  align-items: center;
-  background-color: #1f2637;
-  height: 40px ;
 
-}
 /* Смена цвета на синий при наведении мыши */
-.browser_li:hover{
+.browser_li:hover {
   background-color: #15a4fa;
   border-color: #15a4fa;
   color: white;
 }
+
 /* Изменение цвета картинки при наведении на кнопку */
-.browser_li:hover img{
+.browser_li:hover img {
   filter: brightness(200%);
 }
-/*Стиль меню категорий*/
-.categories_li_red,.categories_li_yellow,.categories_li_blue,.categories_li_purple {
-  margin: 15px 0 0 0;
+
+.categories {
+  padding-left: 20px;
+  margin-left: 20px;
 }
+
+.categories li {
+  margin-top: 15px;
+  list-style: disc;
+  cursor: pointer;
+}
+
+.categories li:first-child {
+  margin-top: 0;
+}
+
 /*Цвет точек перед категорией*/
-.categories_li_red{
+.categories_li_red {
   color: #e64c66;
 }
-.categories_li_yellow{
+
+.categories_li_yellow {
   color: #ffab00;
 }
-.categories_li_blue{
+
+.categories_li_blue {
   color: #02b4d1;
 }
-.categories_li_purple{
+
+.categories_li_purple {
   color: #7874cf;
 }
-.categories{
-  margin: 0;
+
+.last_performances {
+  margin-left: 20px;
 }
+
+.last_performances li {
+  margin-top: 15px;
+  align-items: normal;
+}
+
+.last_performances li:first-child {
+  margin-top: 0;
+}
+
 /*Стиль текста в категориях*/
-.categories_text{
+.categories_text {
   color: #78829d;
   font-size: 13px;
 }
+
 /*Стиль жирного текста текста в History List*/
 .lighter {
   color: #9eb2c9;
   font-size: 12px;
+  cursor: pointer;
 }

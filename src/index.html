@@ -1,241 +1,253 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="utf-8">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@1,600;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles/main.css">
-<link rel="stylesheet" href="styles/headstyle.css">
-<link rel="stylesheet" href="styles/asidestyle.css">
-<link rel="stylesheet" href="styles/slave.css">
-<link rel="stylesheet" href="styles/contentstyle.css">
-<link rel="stylesheet" href="styles/rating.css">
-<link rel="stylesheet" href="styles/footerstyle.css">
-<link rel="shortcut.icon" href="favicon.ico" type="image/x-icon">
-<title>BookShare</title>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@1,600;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/headstyle.css">
+    <link rel="stylesheet" href="styles/asidestyle.css">
+    <link rel="stylesheet" href="styles/slave.css">
+    <link rel="stylesheet" href="styles/contentstyle.css">
+    <link rel="stylesheet" href="styles/rating.css">
+    <link rel="stylesheet" href="styles/footerstyle.css">
+    <link rel="shortcut.icon" href="favicon.ico" type="image/x-icon">
+    <title>BookShare</title>
+    <script>
+        function isEmail() {
+            console.log(123)
+        }
+    </script>
 </head>
-  <body>
-    <!-- <script src="scripts/lesson2.js" charset="utf-8"></script> -->
-    <header><!-- Верхний раздел с менюшками и логами -->
-        <div class="hat"><img class="aside_icons" src="assets/icons/nowreading.png"></img>MyBookApp</div> <!-- Заголовок по центру -->
-        <div class="hat_menu">Help Center</div>
+<body>
+<!-- <script src="scripts/lesson2.js" charset="utf-8"></script> -->
+<header><!-- Верхний раздел с менюшками и логами -->
+    <div class="hat"><span class="icon hat_icon"></span>MyBookApp</div>
+    <!-- Заголовок по центру -->
+    <div class="hat_buttons">
+        <div class="hat_button">Help Center</div>
         <div class="hat_dot"></div>
-        <div class="hat_menu">Our Support</div>
-        <div class="user_menu" title="Ссылки просто рандомно присобачил">
-          <button class="user_option">Здесь будет меню юзера</button>
-          <ul class="option_list">
+        <div class="hat_button">Our Support</div>
+    </div>
+    <div class="user_menu" title="Ссылки просто рандомно присобачил">
+        <button class="user_option">Здесь будет меню юзера</button>
+        <ul class="option_list">
             <li href="http://www.rutracker.org">Авторизация</li>
             <li>Здесь была грязь</li>
-            <li href="https://www.imdb.com/video/vi710935321/?playlistId=tt0285698&ref_=tt_pr_ov_vi" target="windowName" onclick="window.open(this.href,this.target,'width=300,height=300');return false;">Детонация</a><!--Открытие в новом окне необходимого размера-->
-          </ul>
-        </div>
-    </header>
-    <div class="mid_volume"><!--Центральная часть страницы-->
-      <aside><!-- Левая менюшка -->
-        <div class="substrance_for_add_button"><!-- Первый раздел с кнопкой добавления -->
-          <button class="add_book_button">
-            <div class="plus_ico"></div>
-            <span>ADD A BOOK</span>
-          </button>
+            <li href="https://www.imdb.com/video/vi710935321/?playlistId=tt0285698&ref_=tt_pr_ov_vi" target="windowName"
+                onclick="window.open(this.href,this.target,'width=300,height=300');return false;">Детонация
+            </li>
+            <!--Открытие в новом окне необходимого размера-->
+        </ul>
+    </div>
+</header>
+<div class="mid_volume"><!--Центральная часть страницы-->
+    <aside><!-- Левая менюшка -->
+        <div class="substrance add_book"><!-- Первый раздел с кнопкой добавления -->
+            <button class="add_book_button">
+                <div class="plus_ico"></div>
+                <span>ADD A BOOK</span>
+            </button>
         </div>
         <div class="substrance"><!-- Второй раздел с меню навигации-->
-           <ul class="browser">
-            <li class="browser_li">
-              <img class="aside_icons" src="assets/icons/nowreading.png"></img>
-              Now Reading
-            </li>
-            <li class="browser_li">
-              <img class="aside_icons" src="assets/icons/browse.png"></img>
-              Browse
-            </li>
-            <li class="browser_li">
-              <img class="aside_icons" src="assets/icons/buybooks.png"></img>
-              Buy Books
-            </li>
-            <li class="browser_li">
-              <img class="aside_icons" src="assets/icons/favouritebooks.png"></img>
-              Favourite Books
-            </li>
-            <li class="browser_li">
-              <img class="aside_icons" src="assets/icons/wishlist.png"></img>
-              Wishlist
-            </li>
-            <li class="browser_li">
-              <img class="aside_icons" src="assets/icons/history.png"></img>
-              History
-            </li>
+            <ul>
+                <li class="browser_li default_list">
+                    <span class="aside_icons"></span>
+                    Now Reading
+                </li>
+                <li class="browser_li default_list">
+                    <span class="aside_icons"></span>
+                    Browse
+                </li>
+                <li class="browser_li default_list">
+                    <span class="aside_icons"></span>
+                    Buy Books
+                </li>
+                <li class="browser_li default_list">
+                    <span class="aside_icons"></span>
+                    Favourite Books
+                </li>
+                <li class="browser_li default_list">
+                    <span class="aside_icons"></span>
+                    Wishlist
+                </li>
+                <li class="browser_li default_list">
+                    <span class="aside_icons"></span>
+                    History
+                </li>
             </ul>
         </div>
         <div class="substrance">
-          <ul class="categories">
-           <li class="categories_li_red"><span class="categories_text">Must Read Titles</span></li>
-           <li class="categories_li_yellow"><span class="categories_text">Best of Wish</span></li>
-           <li class="categories_li_blue"><span class="categories_text">Classic Novels</span></li>
-           <li class="categories_li_purple"><span class="categories_text">Non fictions</span></li>
-          </ul>
+            <ul class="categories">
+                <li class="categories_li_red"><span class="categories_text">Must Read Titles</span></li>
+                <li class="categories_li_yellow"><span class="categories_text">Best of Wish</span></li>
+                <li class="categories_li_blue"><span class="categories_text">Classic Novels</span></li>
+                <li class="categories_li_purple"><span class="categories_text">Non fictions</span></li>
+            </ul>
         </div>
         <div class="substrance">
-         <ul class="history_list">
-          <li class="last_perfomance">
-            <img class="aside_icons" src="assets/icons/history.png"></img>
-            <p>
-            You added
-            <span class="lighter">Fight Club</span>
-            by
-            <span class="lighter">Chuck Palahniuk</span>
-            to your
-            <span class="lighter">Must Read Titles</span>
-            <br>24 minutes ago
-            </p>
-          </li>
-          <li class="prelast_perfomance">
-            <img class="aside_icons" src="assets/icons/history.png"></img>
-            <p>You added
-              <span class="lighter">The Trial</span>
-              by
-              <span class="lighter">Franz Kafka</span>
-              to your
-              <span class="lighter">Must Read Titles</span>
-              <br>48 minutes ago
-            </p>
-          </li>
-         </ul>
+            <ul class="last_performances">
+                <li class="default_list">
+                    <span class="aside_icons"></span>
+                    <div>
+                        You added
+                        <span class="lighter">Fight Club</span>
+                        by
+                        <span class="lighter">Chuck Palahniuk</span>
+                        to your
+                        <span class="lighter">Must Read Titles</span>
+                        <br>24 minutes ago
+                    </div>
+                </li>
+                <li class="default_list">
+                    <span class="aside_icons"></span>
+                    <div>You added
+                        <span class="lighter">The Trial</span>
+                        by
+                        <span class="lighter">Franz Kafka</span>
+                        to your
+                        <span class="lighter">Must Read Titles</span>
+                        <br>48 minutes ago
+                    </div>
+                </li>
+            </ul>
         </div>
-       </aside>
-       <main>
-          <div class="slave">
+    </aside>
+    <main>
+        <div class="slave">
             <h1>Browse Available Books</h1>
             <div class="filters_and_search">
-              <div class="filters">
-                <button class="choosen_button">All Books</button>
-                <button>Most resent</button>
-                <button>Most popular</button>
-                <button>Free Books</button>
-              </div>
-               <!-- Здесь форма для ввода поикового запроса среди книг -->
-              <div class="poisk">
-                <input class="search" type="search" size="25" placeholder="Enter keywords">
-                <img src="assets/icons/search.png"></img>
-                </input>
-              </div>
+                <div class="filters">
+                    <button class="choosen_button" onclick="isEmail()">All Books</button>
+                    <button>Most resent</button>
+                    <button>Most popular</button>
+                    <button>Free Books</button>
+                </div>
+                <!-- Здесь форма для ввода поикового запроса среди книг -->
+                <div class="poisk">
+                    <input class="search" type="search" size="25" placeholder="Enter keywords">
+                    <img src="assets/icons/search.png"></img>
+                    </input>
+                </div>
             </div>
-          </div>
-          <div class="content">
+        </div>
+        <div class="content">
             <section>
-              <img src="assets/books/1.png"></img>
-              <h2>Jewels of Nizam</h2>
-              <h3>by Geeta Devi</h3>
+                <img src="assets/books/1.png"></img>
+                <h2>Jewels of Nizam</h2>
+                <h3>by Geeta Devi</h3>
                 <div class="rating_body">
-                  <div class="rating_active five_★"></div>
+                    <div class="rating_active five_★"></div>
                 </div>
             </section>
             <section>
-              <img src="assets/books/2.png"></img>
-              <h2>Cake & bakes</h2>
-              <h3>by Sanjeev Kapoor</h3>
-              <div class="rating_body">
-                <div class="rating_active five_★"></div>
-              </div>
+                <img src="assets/books/2.png"></img>
+                <h2>Cake & bakes</h2>
+                <h3>by Sanjeev Kapoor</h3>
+                <div class="rating_body">
+                    <div class="rating_active five_★"></div>
+                </div>
             </section>
             <section>
-              <img src="assets/books/3.png"></img>
-              <h2>Jamie's kitchen</h2>
-              <h3>by Jamie Oliver</h3>
-              <div class="rating_body">
-                <div class="rating_active four_and_half_★"></div>
-              </div>
+                <img src="assets/books/3.png"></img>
+                <h2>Jamie's kitchen</h2>
+                <h3>by Jamie Oliver</h3>
+                <div class="rating_body">
+                    <div class="rating_active four_and_half_★"></div>
+                </div>
             </section>
             <section>
-              <img src="assets/books/4.png"></img>
-              <h2>Inexpensive Family Meals</h2>
-              <h3>by Silmon Holst</h3>
-              <div class="rating_body">
-                <div class="rating_active four_★"></div>
-              </div>
+                <img src="assets/books/4.png"></img>
+                <h2>Inexpensive Family Meals</h2>
+                <h3>by Silmon Holst</h3>
+                <div class="rating_body">
+                    <div class="rating_active four_★"></div>
+                </div>
             </section>
             <section>
-              <img src="assets/books/5.png"></img>
-              <h2>Paleo Slow Coocing</h2>
-              <h3>by Chrissy Gower</h3>
-              <div class="rating_body">
-                <div class="rating_active four_and_half_★"></div>
-              </div>
+                <img src="assets/books/5.png"></img>
+                <h2>Paleo Slow Coocing</h2>
+                <h3>by Chrissy Gower</h3>
+                <div class="rating_body">
+                    <div class="rating_active four_and_half_★"></div>
+                </div>
             </section>
             <section>
-              <img src="assets/books/5.png"></img>
-              <h2>Paleo Slow Coocing</h2>
-              <h3>by Chrissy Gower</h3>
-              <div class="rating_body">
-                <div class="rating_active four_and_half_★"></div>
-              </div>
+                <img src="assets/books/5.png"></img>
+                <h2>Paleo Slow Coocing</h2>
+                <h3>by Chrissy Gower</h3>
+                <div class="rating_body">
+                    <div class="rating_active four_and_half_★"></div>
+                </div>
             </section>
             <section>
-              <img src="assets/books/6.png"></img>
-              <h2>Cook Like an Italian</h2>
-              <h3>by Tobie Puttock</h3>
-              <div class="rating_body">
-                <div class="rating_active four_★"></div>
-              </div>
+                <img src="assets/books/6.png"></img>
+                <h2>Cook Like an Italian</h2>
+                <h3>by Tobie Puttock</h3>
+                <div class="rating_body">
+                    <div class="rating_active four_★"></div>
+                </div>
             </section>
             <section>
-              <img src="assets/books/7.png"></img>
-              <h2>Suneeta Vaswani</h2>
-              <h3>by Geeta Devi</h3>
-              <div class="rating_body">
-                <div class="rating_active five_★"></div>
-              </div>
+                <img src="assets/books/7.png"></img>
+                <h2>Suneeta Vaswani</h2>
+                <h3>by Geeta Devi</h3>
+                <div class="rating_body">
+                    <div class="rating_active five_★"></div>
+                </div>
             </section>
             <section>
-              <img src="assets/books/8.png"></img>
-              <h2>Jamie Does</h2>
-              <h3>by Jamie Oliver</h3>
-              <div class="rating_body">
-                <div class="rating_active four_★"></div>
-              </div>
+                <img src="assets/books/8.png"></img>
+                <h2>Jamie Does</h2>
+                <h3>by Jamie Oliver</h3>
+                <div class="rating_body">
+                    <div class="rating_active four_★"></div>
+                </div>
             </section>
             <section>
-              <img src="assets/books/9.png"></img>
-              <h2>Jamie's Italy</h2>
-              <h3>by Jamie Oliver</h3>
-              <div class="rating_body">
-                <div class="rating_active five_★"></div>
-              </div>
+                <img src="assets/books/9.png"></img>
+                <h2>Jamie's Italy</h2>
+                <h3>by Jamie Oliver</h3>
+                <div class="rating_body">
+                    <div class="rating_active five_★"></div>
+                </div>
             </section>
             <section>
-              <img src="assets/books/10.png"></img>
-              <h2>Vegetables Cookbook</h2>
-              <h3>by Metthew Biggs</h3>
-              <div class="rating_body">
-                <div class="rating_active three_and_half★"></div>
-              </div>
+                <img src="assets/books/10.png"></img>
+                <h2>Vegetables Cookbook</h2>
+                <h3>by Metthew Biggs</h3>
+                <div class="rating_body">
+                    <div class="rating_active three_and_half★"></div>
+                </div>
             </section>
-          </div>
-        </main>
-      </div>
-    <footer>
-      <button class="settings">
-        <img class="footer_img" src="assets/icons/settings.png"></img></button>
-      <button class="ask">
-        <img class="footer_img" src="assets/icons/ask.png"></img></button>
-    </footer>
-    <!-- Ведуться технические работы, просьба не обращать внимания!!!
-
-      <div class="rating_value">2</div>
-    </div>
-    <div class="rating" id="sync22">
-      <div class="rating_body" id="sync2">
-        <div class="rating_active"></div>
-        <div class="rating_items">
-          <input type="radio" class="rating_item" name="rating" value="1">
-          <input type="radio" class="rating_item" name="rating" value="2">
-          <input type="radio" class="rating_item" name="rating" value="3">
-          <input type="radio" class="rating_item" name="rating" value="4">
-          <input type="radio" class="rating_item" name="rating" value="5">
         </div>
-      </div>
-      <div class="rating_value">2</div>
+    </main>
+</div>
+<footer>
+    <button class="settings">
+        <img class="footer_img" src="assets/icons/settings.png"></img></button>
+    <button class="ask">
+        <img class="footer_img" src="assets/icons/ask.png"></img></button>
+</footer>
+<!-- Ведуться технические работы, просьба не обращать внимания!!!
+
+  <div class="rating_value">2</div>
+</div>
+<div class="rating" id="sync22">
+  <div class="rating_body" id="sync2">
+    <div class="rating_active"></div>
+    <div class="rating_items">
+      <input type="radio" class="rating_item" name="rating" value="1">
+      <input type="radio" class="rating_item" name="rating" value="2">
+      <input type="radio" class="rating_item" name="rating" value="3">
+      <input type="radio" class="rating_item" name="rating" value="4">
+      <input type="radio" class="rating_item" name="rating" value="5">
     </div>
-    <script src="scripts/rating.js" charset="utf-8"></script> -->
-  </body>
+  </div>
+  <div class="rating_value">2</div>
+</div>
+<script src="scripts/rating.js" charset="utf-8"></script> -->
+</body>
 </html>
