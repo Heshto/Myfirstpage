@@ -1,0 +1,49 @@
+.slave {
+  height: 120px;
+  width: auto;
+  background-color: #eef1f7;
+}
+.slave h1 {
+  margin-left: 30px;
+}
+.filters_and_search {
+  display: flex;
+}
+.filters {
+  padding-left: 20px;
+  flex-grow: 1;
+  height: 20px;
+}
+
+.filters button {
+  background-color: #eef1f7;
+  color: #8c97b2;
+  border: 0;
+  border-radius: 15px;
+}
+.filters button:hover {
+  background-color: #97b3ce;
+  color: white;
+}
+.poisk {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  min-width: 50%;
+  background-color: #ffffff;
+  color: grey;
+  padding-left: 15px;
+}
+.poisk img {
+  height: 70%;
+  margin-right: 5px;
+}
+.search{
+  outline: none;
+  flex-grow: 1;
+  border: 0;
+  white-space: nowrap;
+  border-radius: 25px;
+}
