@@ -1,43 +1,55 @@
 .rating_body {
-	width: 80px;
+  width: 80px;
 }
-.rating_active{
+
+.rating_active {
   height: 100%;
-	overflow: hidden;
+  overflow: hidden;
 }
-.rating_active::before{
-	content: "★★★★★";
+
+.rating_active::before {
+  content: "★★★★★";
   width: 100%;
   height: 100%;
-	color: gold;
+  color: gold;
 }
-.half_★{
-	width: 10%;
+
+.half_★ {
+  width: 10%;
 }
+
 .one_★ {
-	width: 20%;
+  width: 20%;
 }
-.one_and_half_★{
-	width: 30%;
+
+.one_and_half_★ {
+  width: 30%;
 }
+
 .two_★ {
-	width: 40%;
+  width: 40%;
 }
-.two_and_half_★{
-	width: 50%;
+
+.two_and_half_★ {
+  width: 50%;
 }
+
 .three_★ {
-	width: 60%;
+  width: 60%;
 }
+
 .three_and_half★ {
-	width: 70%;
+  width: 70%;
 }
+
 .four_★ {
-	width: 80%;
+  width: 80%;
 }
+
 .four_and_half_★ {
-	width: 90%;
+  width: 90%;
 }
+
 .five_★ {
-	width: 100%;
+  width: 100%;
 }

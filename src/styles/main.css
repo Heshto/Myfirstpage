@@ -10,6 +10,10 @@ button {
   border: none;
   cursor: pointer;
 }
+input {
+  outline: none;
+  border: none;
+}
 
 body {
   min-height: 100vh;
@@ -45,11 +49,10 @@ main {
 }
 
 footer {
-  display: flex;
-  flex-flow: row-reverse;
   height: 45px;
+  display: flex;
+  justify-content: flex-end;
   background-color: #181e2c;
-  width: 100%;
 }
 
 .icon {
