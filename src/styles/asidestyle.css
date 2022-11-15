@@ -1,127 +1,177 @@
-/*Стили подложек*/
-.substrance_for_add_button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #1f2637;
-  width: 200px;
-  margin:  0 0 5px 0;
+.aside__window {
+    margin: 5px 0;
+    padding: 15px 0 15px 0;
+    border: 1px solid #282f41;
+    border-right: none;
+    border-left: none;
+    background-color: #1f2637;
 }
-.substrance {
-  border-style: solid;
-  border-width: 0;
-  border-top-width: 1px;
-  border-color: #282f41;
-  background-color: #1f2637;
-  width: 100%;
-  margin: 5px 0;
-  padding-bottom: 15px;
+
+.aside__window:first-child {
+    margin: 0 0 5px 0;
+    padding: 35px 0;
+    border-top: none;
+    display: flex;
+    justify-content: center;
 }
+
 /*Стиль кнопки добавления*/
-.add_book_button{
-  padding: 0;
-  margin: 35px 0;
-  border-radius: 4px;
-  border: 0;
-  background-color: #f2795a;
-  width: 160px;
-  height: 44px;
-  color: white;
-  font-size: 15px;
-  display: flex;
-  align-items: center;
-  padding-left: 22px;
-  }
-.plus_ico {
-  background: white;
-  height: 16px;
-  width: 4px;
-  position: relative;
-  border-radius: 2px;
-  margin-right: 22px;
+.add-book {
+    height: 44px;
+    padding: 0 24px 0 18px;
+    border-radius: 4px;
+    font-size: 15px;
+    color: white;
+    background-color: #f2795a;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
-.plus_ico:after {
-  content: "";
-  height: 4px;
-  width: 16px;
-  background: white;
-  position: absolute;
-  left: -6px;
-  top: 6px;
-  border-radius: 2px;
-}
-/*Стиль иконок в браузере навигации и History List*/
-.aside_icons{
+
+.add-book__plus {
     height: 16px;
     width: 16px;
-    padding-right: 10px;
+    position: relative;
+    margin-right: 20px;
+}
+
+.add-book__plus:after {
+    content: " ";
+    height: 4px;
+    width: 16px;
+    background: white;
+    position: absolute;
+    left: 0;
+    top: 6px;
+    border-radius: 2px;
+}
+
+.add-book__plus:before {
+    content: " ";
+    height: 16px;
+    width: 4px;
+    background: white;
+    position: absolute;
+    left: 6px;
+    top: 0;
+    border-radius: 2px;
+}
+
+/*Стиль текста в меню навигации и History List*/
+.browser-list {
+    padding-left: 20px;
+    font-size: 12px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    color: #78829d;
+    cursor: pointer;
+}
+
+/* Смена цвета на синий при наведении мыши */
+.browser-list:hover {
+    background-color: #15a4fa;
+    border-color: #15a4fa;
+    color: white;
+}
+
+/* Изменение цвета картинки при наведении на кнопку */
+.browser-list:hover span {
+    filter: brightness(200%);
+}
+
+.icon_now-reading {
+    background-image: url("../assets/icons/nowreading.png");
+}
+
+.icon_browse{
+    height: 15px;
+    background-image: url("../assets/icons/browse.png");
+}
+
+.icon_buy-books {
+    height: 14px;
+    background-image: url("../assets/icons/buybooks.png");
+}
+
+.icon_favourite-books {
+    height: 15px;
+    background-image: url("../assets/icons/favouritebooks.png");
+}
+
+.icon_wish-list {
+    height: 13px;
+    background-image: url("../assets/icons/wishlist.png");
+}
+
+.icon_history {
+    background-image: url("../assets/icons/history.png");
+}
+
+.categories {
+    padding-left: 20px;
     margin-left: 20px;
 }
-/*Стиль меню навигации и History List*/
-.browser, .history_list {
-  list-style-type: none;
-  padding: 0;
-  background-color: #1f2637;
-}
-.history_list p,.history_list img{
-    margin-top: 20px;
-}
-.history_list p{
-  margin-right: 20px;
-}
-/*Стиль текста в меню навигации и History List*/
-.browser_li, .last_perfomance, .last_perfomance_time, .prelast_perfomance, .prelast_perfomance_time{
-  display: flex;
-  width: 100%;
-  margin: 0 0 0 0;
-  font-size: 12px;
-  color: #78829d;
-  border: 0;
 
-}
-.browser_li{
-  align-items: center;
-  background-color: #1f2637;
-  height: 40px ;
-
-}
-/* Смена цвета на синий при наведении мыши */
-.browser_li:hover{
-  background-color: #15a4fa;
-  border-color: #15a4fa;
-  color: white;
-}
-/* Изменение цвета картинки при наведении на кнопку */
-.browser_li:hover img{
-  filter: brightness(200%);
-}
 /*Стиль меню категорий*/
-.categories_li_red,.categories_li_yellow,.categories_li_blue,.categories_li_purple {
-  margin: 15px 0 0 0;
+.categories__li {
+    margin-top: 15px;
+    list-style: disc;
+    cursor: pointer;
 }
+
+.categories__li:first-child {
+    margin: 0;
+}
+
 /*Цвет точек перед категорией*/
-.categories_li_red{
-  color: #e64c66;
+.categories__li_red {
+    color: #e64c66;
 }
-.categories_li_yellow{
-  color: #ffab00;
+
+.categories__li_yellow {
+    color: #ffab00;
 }
-.categories_li_blue{
-  color: #02b4d1;
+
+.categories__li_blue {
+    color: #02b4d1;
 }
-.categories_li_purple{
-  color: #7874cf;
+
+.categories__li_purple {
+    color: #7874cf;
 }
-.categories{
-  margin: 0;
-}
+
 /*Стиль текста в категориях*/
-.categories_text{
-  color: #78829d;
-  font-size: 13px;
+.categories span {
+    color: #78829d;
+    font-size: 13px;
 }
+
+/*Стиль меню навигации и History List*/
+.perfomances {
+    margin-left: 20px;
+}
+
+.perfomances li {
+    display: flex;
+    padding: 0;
+    font-size: 12px;
+    line-height: 18px;
+    list-style-type: none;
+    color: #78829d;
+}
+
+.perfomances li:last-child {
+    margin-top: 15px;
+}
+
+.perfomances span {
+    flex-shrink: 0;
+}
+
 /*Стиль жирного текста текста в History List*/
 .lighter {
-  color: #9eb2c9;
-  font-size: 12px;
+    color: #9eb2c9;
+    font-size: 12px;
+    cursor: pointer;
 }

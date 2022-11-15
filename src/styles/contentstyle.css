@@ -1,50 +1,40 @@
 /* настройка грида */
 .content {
-  overflow-y: scroll;
-  overflow-x: hidden;
-  height: 780px;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(200px, 1fr)) repeat(auto-fit, minmax(200px, 1fr));
-  grid-column-gap: 20px;
-  grid-row-gap: 30px;
-  grid-column-end: 3;
-  margin: 30px 20px;
-  height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr)) repeat(auto-fit, minmax(200px, 1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    grid-column-end: 3;
+    padding: 30px 20px;
 }
-/* настройка скролбара в разделе контента */
-.content::-webkit-scrollbar{
-  width: 5px;
-}
-.content::-webkit-scrollbar-button{
 
+.book {
+    display: flex;
+    flex-direction: column;
 }
-.content::-webkit-scrollbar-track{
-  width: 0;
-  height: 0;
+
+.book__container {
+    display: flex;
+    flex-direction: column;
 }
-.content::-webkit-scrollbar-thumb{
-  background-color: #ccd5e4;
-  border-radius: 10px;
+
+.book img {
+    width: 200px;
+    height: 275px;
+    margin-bottom: 15px;
+    cursor: pointer;
 }
-/* настройка одной единицы контента */
+
+.book h2 {
+    margin-bottom: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.book__author {
+    margin-bottom: 6px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
 /* настройка рейтинга в raiting.css */
-.content section {
-  display: flex;
-  flex-direction: column;
-}
-section img {
-  width: 200px;
-  height: 275px;
-  margin-bottom: 15px;
-}
-section h2,h3 {
-  margin-top:7px;
-}
-section h2 {
-  font-size: 16px;
-}
-section h3 {
-  font-size: 12px;
-  font-weight: normal;
-  margin-bottom: 5px;
-}
