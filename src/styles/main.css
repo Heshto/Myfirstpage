@@ -8,11 +8,11 @@
 }
 
 body {
+    min-width: 950px;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     font-family: 'Oswald', sans-serif;
-    min-width: 950px;
-    max-width: 100vw;
 }
 
 header {
@@ -26,7 +26,6 @@ header {
 .mid-volume {
     display: flex;
     flex-grow: 1;
-    min-height: 100vh;
 }
 
 aside {
