@@ -1,0 +1,19 @@
+footer button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 55px;
+}
+
+.settings {
+  background-color: #15a4fa;
+}
+
+.ask {
+  background-color: #1f2637;
+}
+
+.footer_icon {
+  background-color: gray;
+}

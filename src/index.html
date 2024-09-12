@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@1,600;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/headstyle.css">
+    <link rel="stylesheet" href="styles/asidestyle.css">
+    <link rel="stylesheet" href="styles/slave.css">
+    <link rel="stylesheet" href="styles/contentstyle.css">
+    <link rel="stylesheet" href="styles/rating.css">
+    <link rel="stylesheet" href="styles/footerstyle.css">
+    <link rel="shortcut.icon" href="favicon.ico" type="image/x-icon">
+    <title>BookShare</title>
+    <script>
+        function isEmail() {
+            console.log(123)
+        }
+    </script>
+</head>
+<body>
+<!-- <script src="scripts/lesson2.js" charset="utf-8"></script> -->
+<header><!-- Верхний раздел с менюшками и логами -->
+    <div class="hat"><span class="icon hat_icon"></span>MyBookApp</div>
+    <!-- Заголовок по центру -->
+    <div class="hat_buttons">
+        <div class="hat_button">Help Center</div>
+        <div class="hat_dot"></div>
+        <div class="hat_button">Our Support</div>
+    </div>
+    <div class="user_menu" title="Ссылки просто рандомно присобачил">
+        <button class="user_option">Здесь будет меню юзера</button>
+        <ul class="option_list">
+            <li href="http://www.rutracker.org">Авторизация</li>
+            <li>Здесь была грязь</li>
+            <li href="https://www.imdb.com/video/vi710935321/?playlistId=tt0285698&ref_=tt_pr_ov_vi" target="windowName"
+                onclick="window.open(this.href,this.target,'width=300,height=300');return false;">Детонация
+            </li>
+            <!--Открытие в новом окне необходимого размера-->
+        </ul>
+    </div>
+</header>
+<div class="mid_volume"><!--Центральная часть страницы-->
+    <aside><!-- Левая менюшка -->
+        <div class="substrance add_book"><!-- Первый раздел с кнопкой добавления -->
+            <button class="add_book_button">
+                <div class="plus_ico"></div>
+                <span>ADD A BOOK</span>
+            </button>
+        </div>
+        <div class="substrance"><!-- Второй раздел с меню навигации-->
+            <ul>
+                <li class="browser_li default_list">
+                    <span class="aside_icons"></span>
+                    Now Reading
+                </li>
+                <li class="browser_li default_list">
+                    <span class="aside_icons"></span>
+                    Browse
+                </li>
+                <li class="browser_li default_list">
+                    <span class="aside_icons"></span>
+                    Buy Books
+                </li>
+                <li class="browser_li default_list">
+                    <span class="aside_icons"></span>
+                    Favourite Books
+                </li>
+                <li class="browser_li default_list">
+                    <span class="aside_icons"></span>
+                    Wishlist
+                </li>
+                <li class="browser_li default_list">
+                    <span class="aside_icons"></span>
+                    History
+                </li>
+            </ul>
+        </div>
+        <div class="substrance">
+            <ul class="categories">
+                <li class="categories_li_red"><span class="categories_text">Must Read Titles</span></li>
+                <li class="categories_li_yellow"><span class="categories_text">Best of Wish</span></li>
+                <li class="categories_li_blue"><span class="categories_text">Classic Novels</span></li>
+                <li class="categories_li_purple"><span class="categories_text">Non fictions</span></li>
+            </ul>
+        </div>
+        <div class="substrance">
+            <ul class="last_performances">
+                <li class="default_list">
+                    <span class="aside_icons"></span>
+                    <div>
+                        You added
+                        <span class="lighter">Fight Club</span>
+                        by
+                        <span class="lighter">Chuck Palahniuk</span>
+                        to your
+                        <span class="lighter">Must Read Titles</span>
+                        <br>24 minutes ago
+                    </div>
+                </li>
+                <li class="default_list">
+                    <span class="aside_icons"></span>
+                    <div>You added
+                        <span class="lighter">The Trial</span>
+                        by
+                        <span class="lighter">Franz Kafka</span>
+                        to your
+                        <span class="lighter">Must Read Titles</span>
+                        <br>48 minutes ago
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <main>
+        <div class="slave">
+            <h1>Browse Available Books</h1>
+            <div class="filters_and_search">
+                <div class="filters">
+                    <button>All Books</button>
+                    <button>Most resent</button>
+                    <button>Most popular</button>
+                    <button>Free Books</button>
+                </div>
+                <!-- Здесь форма для ввода поикового запроса среди книг -->
+                <div class="search">
+                    <input type="search" size="25" placeholder="Enter keywords"/>
+                    <span class="icon searchIcon"></span>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="book">
+                <div class="book__container">
+                    <img src="assets/books/1.png"></img>
+                    <h2>Jewels of Nizam</h2>
+                    <div class="book__author">by Geeta Devi</div>
+                    <div class="rating_body">
+                        <div class="rating_active five_★"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="book">
+                <div class="book__container">
+                    <img src="assets/books/2.png"></img>
+                    <h2>Cake & bakes</h2>
+                    <div class="book__author">by Sanjeev Kapoor</div>
+                    <div class="rating_body">
+                        <div class="rating_active five_★"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="book">
+                <div class="book__container">
+                    <img src="assets/books/3.png"></img>
+                    <h2>Jamie's kitchen</h2>
+                    <div class="book__author">by Jamie Oliver</div>
+                    <div class="rating_body">
+                        <div class="rating_active four_and_half_★"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="book">
+                <div class="book__container">
+                    <img src="assets/books/4.png"></img>
+                    <h2>Inexpensive Family Meals</h2>
+                    <div class="book__author">by Silmon Holst</div>
+                    <div class="rating_body">
+                        <div class="rating_active four_★"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="book">
+                <div class="book__container">
+                    <img src="assets/books/5.png"></img>
+                    <h2>Paleo Slow Coocing</h2>
+                    <div class="book__author">by Chrissy Gower</div>
+                    <div class="rating_body">
+                        <div class="rating_active four_and_half_★"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="book">
+                <div class="book__container">
+                    <img src="assets/books/5.png"></img>
+                    <h2>Paleo Slow Coocing</h2>
+                    <div class="book__author">by Chrissy Gower</div>
+                    <div class="rating_body">
+                        <div class="rating_active four_and_half_★"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="book">
+                <div class="book__container">
+                    <img src="assets/books/6.png"></img>
+                    <h2>Cook Like an Italian</h2>
+                    <div class="book__author">by Tobie Puttock</div>
+                    <div class="rating_body">
+                        <div class="rating_active four_★"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="book">
+                <div class="book__container">
+                    <img src="assets/books/7.png"></img>
+                    <h2>Suneeta Vaswani</h2>
+                    <div class="book__author">by Geeta Devi</div>
+                    <div class="rating_body">
+                        <div class="rating_active five_★"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="book">
+                <div class="book__container">
+                    <img src="assets/books/8.png"></img>
+                    <h2>Jamie Does</h2>
+                    <div class="book__author">by Jamie Oliver</div>
+                    <div class="rating_body">
+                        <div class="rating_active four_★"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="book">
+                <div class="book__container">
+                    <img src="assets/books/9.png"></img>
+                    <h2>Jamie's Italy</h2>
+                    <div class="book__author">by Jamie Oliver</div>
+                    <div class="rating_body">
+                        <div class="rating_active five_★"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="book">
+                <div class="book__container">
+                    <img src="assets/books/10.png"></img>
+                    <h2>Vegetables Cookbook</h2>
+                    <div class="book__author">by Metthew Biggs</div>
+                    <div class="rating_body">
+                        <div class="rating_active three_and_half★"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+<footer>
+    <button class="ask">
+        <span class="icon footer_icon"></span>
+    </button>
+    <button class="settings">
+        <span class="icon footer_icon"></span>
+    </button>
+</footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+.rating_body {
+  width: 80px;
+}
+
+.rating_active {
+  height: 100%;
+  overflow: hidden;
+}
+
+.rating_active::before {
+  content: "★★★★★";
+  width: 100%;
+  height: 100%;
+  color: gold;
+}
+
+.half_★ {
+  width: 10%;
+}
+
+.one_★ {
+  width: 20%;
+}
+
+.one_and_half_★ {
+  width: 30%;
+}
+
+.two_★ {
+  width: 40%;
+}
+
+.two_and_half_★ {
+  width: 50%;
+}
+
+.three_★ {
+  width: 60%;
+}
+
+.three_and_half★ {
+  width: 70%;
+}
+
+.four_★ {
+  width: 80%;
+}
+
+.four_and_half_★ {
+  width: 90%;
+}
+
+.five_★ {
+  width: 100%;
+}
