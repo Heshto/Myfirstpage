@@ -1,0 +1,27 @@
+footer button {
+    height: 100%;
+    width: 55px;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.settings {
+    background-color: #15a4fa;
+}
+
+.ask {
+    background-color: #1f2637;
+}
+
+.footer__icon_ask {
+    margin: 0;
+    background-image: url("../assets/icons/ask.png");
+}
+
+.footer__icon_settings {
+    margin: 0;
+    background-image: url("../assets/icons/settings.png");
+}
